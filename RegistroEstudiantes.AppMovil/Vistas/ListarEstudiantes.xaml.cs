@@ -29,7 +29,16 @@ public partial class ListarEstudiantes : ContentPage
 
     private void filtroSearchBar_TextChanged(object sender, TextChangedEventArgs e)
     {
+        string filtro = filtroSearchBar.Text.ToUpper();
 
+        if (filtro.Length > 0)
+        {
+            listaCollection.ItemsSource = Lista.Where(x => x.NombreCompleto.ToUpper().Contains(filtro));
+        }
+        else
+        {
+            listaCollection.ItemsSource = Lista;
+        }
     }
 
     private async void NuevoEstudianteBoton_Clicked(object sender, EventArgs e)
