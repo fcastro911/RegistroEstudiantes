@@ -68,9 +68,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Vistas\ListarEstudiantes.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+		<MauiXaml Update="Vistas\CrearEstudiante.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Vistas\ListarEstudiantes.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 	</ItemGroup>
 
 </Project>

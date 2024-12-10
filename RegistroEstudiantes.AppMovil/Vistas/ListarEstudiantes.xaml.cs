@@ -12,8 +12,8 @@ public partial class ListarEstudiantes : ContentPage
 
     }
 
-    private void NuevoEstudianteBoton_Clicked(object sender, EventArgs e)
+    private async void NuevoEstudianteBoton_Clicked(object sender, EventArgs e)
     {
-
+        await Navigation.PushAsync(new CrearEstudiante());
     }
 }
