@@ -1,4 +1,6 @@
-﻿namespace RegistroEstudiantes.AppMovil
+﻿using RegistroEstudiantes.AppMovil.Vistas;
+
+namespace RegistroEstudiantes.AppMovil
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new Vistas.ListarEstudiantes();
+            MainPage = new NavigationPage(new ListarEstudiantes());
         }
     }
 }
