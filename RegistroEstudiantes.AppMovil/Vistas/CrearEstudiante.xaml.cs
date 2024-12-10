@@ -43,7 +43,7 @@ public partial class CrearEstudiante : ContentPage
         }
         catch (Exception ex)
         {
-            await DisplayAlert("Error", ex.Message,"OK");
+            await DisplayAlert("Error", ex.Message, "OK");
         }
            
     }
